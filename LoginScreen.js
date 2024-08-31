@@ -17,7 +17,7 @@ const LoginScreen = () => {
       return;
     }
   
-    fetch("http://192.168.0.12:8080/userInfo/login", {
+    fetch("http://172.30.1.99:8080/userInfo/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

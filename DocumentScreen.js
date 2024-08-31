@@ -41,7 +41,7 @@ const DocumentScreen = ({ route }) => {
       setElapsedTime(elapsedTime);
       try {
         console.log("쏘는 값1", formattedTime);
-        const saveTimeEndpoint = "http://192.168.0.12:8080/saveSearchTime";
+        const saveTimeEndpoint = "http://172.30.1.99:8080/saveSearchTime";
         fetch(saveTimeEndpoint, {
           method: "POST",
           headers: {
@@ -73,7 +73,7 @@ const DocumentScreen = ({ route }) => {
     const fetchDocumentData = async () => {
       try {
         const response = await axios.get(
-          `http://192.168.0.12:8080/document/${documentId}`
+          `http://172.30.1.99:8080/document/${documentId}`
         );
         setDocumentData(response.data);
       } catch (error) {

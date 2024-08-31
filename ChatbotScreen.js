@@ -51,7 +51,7 @@ const ChatbotScreen = () => {
       setElapsedTime(elapsedTime);
       try {
         console.log("쏘는 값1", formattedTime);
-        const saveTimeEndpoint = "http://192.168.0.12:8080/saveChatbotTime";
+        const saveTimeEndpoint = "http://172.30.1.99:8080/saveChatbotTime";
         fetch(saveTimeEndpoint, {
           method: "POST",
           headers: {
